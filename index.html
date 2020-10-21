@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrapcss/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header class="header"></header>
+    <section class="container">
+        <div class="row">
+            <div class="col-2 col-md-3">
+            </div>
+            <div class="col-8 col-md-6">
+                <div class="row">
+                    <input id="show-content" type="text" placeholder="0">
+                    <input id="result" type="text" placeholder="0" >
+                </div>
+                <div class="row numbers">
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="%" onclick="percent()"/>
+                    </div>
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="<" onclick="back()"/>
+                    </div>
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="C" onclick="clr()"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad pad-operator-color">
+                        <input type="button" value="/" onclick="dis('/')"/>
+                    </div>
+                </div>
+                <div class="row numbers">
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="7" onclick="dis('7')"/>
+                    </div>
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="8" onclick="dis('8')"/>
+                    </div>
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="9" onclick="dis('9')"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad pad-operator-color">
+                        <input type="button" value="*" onclick="dis('*')"/>
+                    </div>
+                </div>
+                <div class="row numbers">
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="4" onclick="dis('4')"/>
+                    </div>
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="5" onclick="dis('5')"/>
+                    </div>
+                    <div class="col-3 col-md-3 primary-text number-pad">
+                        <input type="button" value="6" onclick="dis('6')"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad pad-operator-color">
+                        <input type="button" value="-" onclick="dis('-')"/>
+                    </div>
+                </div>
+                <div class="row numbers">
+                    <div class="col-3 col-md-3 number-pad primary-text number-operator-pad">
+                        <input type="button" value="1" onclick="dis('1')"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad primary-text number-operator-pad">
+                        <input type="button" value="2" onclick="dis('2')"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad primary-text number-operator-pad">
+                        <input type="button" value="3" onclick="dis('3')"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad pad-operator-color">
+                        <input type="button" value="+" onclick="dis('+')"/>
+                    </div>
+                </div>
+                <div class="row numbers">
+                    <div class="col-3 col-md-3 number-pad primary-text border-rad-left">
+                        <input type="button" value="0" onclick="dis('0')"/>
+                    </div>
+                    <div class="col-3 col-md-3 number-pad primary-text">
+                        <input type="button" value="." onclick="dis('.')"/>
+                    </div>
+                    <div class="col-6 col-md-6 number-pad border-rad-right pad-equal-color">
+                   
+                            <input type="button" value="=" onclick="solve()"/>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-md-3">
+            </div>
+        </div>
+    </section>
+    <footer class="footer"></footer>
+    <script src="./js/function.js"></script>
+</body>
+</html>
